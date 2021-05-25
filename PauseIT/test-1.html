@@ -1,0 +1,231 @@
+<!--doctype html-->
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<title>Movies Website</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--style----->
+<style>
+    body{
+        font-family: poppins;
+    }
+</style>
+<link rel="stylesheet" href="css/style_1.css"/>
+<link rel="stylesheet" href="css/lightslider.css">
+<!--js-link---------------------->
+<script src="js/JQuery3.3.1.js"></script>
+<script src="js/lightslider.js"></script>
+<!--fav-icon---------------------->
+<link rel="shortcut icon" href="images/fav icon.png">
+<!--using FontAwesome---------------------->
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+	
+<body>
+        <!--navigation-------------->
+    <nav>
+        <!--logo--------------->
+        <a href="index.html" class="logo">
+            <img src="images/logo.png"/>
+        </a>
+        <!--menu--btn----------------->
+        <input type="checkbox" class="menu-btn" id="menu-btn"/>
+        <label class="menu-icon" for="menu-btn">
+            <span class="nav-icon"></span>
+        </label>
+        <!--menu-------------->
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="test.html">Movies</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="test-2.html">Action</a></li>
+            <li><a href="test-3.html">Horror</a></li>
+        </ul>
+        <!--search------------->
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search" input>
+<ul id="myUL"  >
+    <li style="display:none"><a href="#">Us</a></li>
+    <li style="display:none"><a href="https://youtu.be/IWBsDaFWyTE">The Falcon and The Winter Soldier</a></li>
+    <li style="display:none" ><a href="https://youtu.be/-bfAVpuko5o">Invincible</a></li>
+    <li style="display:none"><a href="https://youtu.be/oxy8udgWRmo">Terminator Dark Fate </a></li>
+    <li style="display:none"><a href="https://youtu.be/odM92ap8_c0">Godzilla vs. Kong</a></li>
+    <li style="display:none"><a href="https://youtu.be/HZ7PAyCDwEg">Hobbs & Shaw</a></li>
+    <li style="display:none"><a href="https://youtu.be/sL-9Khv7wa4">Knives Out</a></li>
+    <li style="display:none"><a href="https://youtu.be/7wd5KEaOtm4">Scott Pilgrim Vs. The World</a></li>
+    <li style="display:none"><a href="https://youtu.be/NYH2sLid0Zc">Mortal Kombat</a></li>
+    <li style="display:none"><a href="https://youtu.be/6sxCFZ8_d84">Nomadland</a></li>
+    <li style="display:none"><a href="https://youtu.be/wZti8QKBWPo">Nobody</a></li>
+    <li style="display:none"><a href="https://youtu.be/vM-Bja2Gy04">Justice League</a></li>
+    <li style="display:none"><a href="https://youtu.be/1VIZ89FEjYI">Raya and The Last Dragon</a></li>
+    <li style="display:none"><a href="https://youtu.be/kP9TfCWaQT4">Tom & Jerry</a></li>
+    <li style="display:none"><a href="https://youtu.be/7i5kiFDunk8">Promising Young Woman</a></li>
+    <li style="display:none"><a href="https://youtu.be/xOsLIiBStEs">Soul</a></li>
+    <li style="display:none"><a href="https://youtu.be/DqQe3OrsMKI">The Girl with the Dragon Tatoo</a></li>
+    <li style="display:none"><a href="https://youtu.be/JE9z-gy4De4">Inception</a></li>
+    <li style="display:none"><a href="https://youtu.be/c_dNIXwrbzY">Kill Bill: Volume 1</a></li>
+    <li style="display:none"><a href="https://youtu.be/ELeMaP8EPAA">Once Upon a Time in Hollywood</a></li>
+    <li style="display:none"><a href="https://youtu.be/tg52up16eq0">Spider-Man into the Spider-Verse</a></li>
+    <li style="display:none"><a href="https://youtu.be/YqNYrYUiMfg">1917</a></li>
+    <li style="display:none"><a href="https://youtu.be/sRfnevzM9kQ">Get Out</a></li>
+    <li style="display:none"><a href="https://youtu.be/2-_-1nJf8Vg">Gone Girl</a></li>
+    <li style="display:none"><a href="https://youtu.be/GQR5zsLHbYw">The Nice Guys</a></li>
+    <li style="display:none"><a href="https://youtu.be/DBUXcNTjviI">La La Land</a></li>
+    <li style="display:none"><a href="https://youtu.be/SEUXfv87Wpk">Parasite</a></li>
+    <li style="display:none"><a href="https://youtu.be/tFMo3UJ4B4g">Arrival</a></li>
+    <li style="display:none"><a href="https://youtu.be/6kw1UVovByw">Skyfall</a></li>
+    <li style="display:none"><a href="https://youtu.be/AST2-4db4ic">Little Women</a></li>
+    <li style="display:none"><a href="https://youtu.be/ndl1W4ltcmg">The Witcher</a></li>
+    <li style="display:none"><a href="https://youtu.be/1KsyZF590NM">Tom Clancy's Jack Ryan</a></li>
+    <li style="display:none"><a href="https://youtu.be/aOC8E8z_ifw">The Mandalorian</a></li>
+    <li style="display:none"><a href="https://youtu.be/sj9J2ecsSpo">Wandavision</a></li>
+    <li style="display:none"><a href="https://youtu.be/ESEUoa-mz2c">Dark</a></li>
+    <li style="display:none"><a href="https://youtu.be/rlR4PJn8b8I">Game of Thrones</a></li>
+    <li style="display:none"><a href="https://youtu.be/b9EkMc79ZSU">Stranger Things</a></li>
+    <li style="display:none"><a href="https://youtu.be/HhesaQXLuRY">Breaking Bad</a></li>
+    <li style="display:none"><a href="https://youtu.be/hEJnMQG9ev8">Mad Max: Fury Road</a></li>
+    <li style="display:none"><a href="https://youtu.be/vw61gCe2oqI">Edge of Tomorrow</a></li>
+    <li style="display:none"><a href="https://youtu.be/6ZfuNTqbHE8">Avengers: Infinity War</a></li>
+    <li style="display:none"><a href="https://youtu.be/AZGcmvrTX9M">TENET</a></li>
+    <li style="display:none"><a href="https://youtu.be/LDG9bisJEaI">The Dark Knight</a></li>
+    <li style="display:none"><a href="https://youtu.be/wb49-oV0F78">Mission Impossible Fallout</a></li>
+    <li style="display:none"><a href="https://youtu.be/sGbxmsDFVnE">Star Wars: The Force Awakens</a></li>
+    <li style="display:none"><a href="https://youtu.be/Div0iP65aZo">Logan</a></li>
+    <li style="display:none"><a href="https://youtu.be/FnCdOQsX5kc">IT</a></li>
+    <li style="display:none"><a href="https://youtu.be/hNCmb-4oXJA">Us</a></li>
+    <li style="display:none"><a href="https://youtu.be/1Vnghdsjmd0">MIDSOMMAR</a></li>
+    <li style="display:none"><a href="https://youtu.be/k10ETZ41q5o">The Conjuring</a></li>
+    <li style="display:none"><a href="https://youtu.be/76yBTNDB6vU">Don't Breathe</a></li>
+    <li style="display:none"><a href="https://youtu.be/v3lXYAzf5TQ">Happy Death Day</a></li>
+    <li style="display:none"><a href="https://youtu.be/H6MLJG0RdDE">Crawl</a></li>
+    <li style="display:none"><a href="https://youtu.be/gJSHhMUPD7M">Evil dead</a></li>
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+ if(input.value.length == 0){
+        ul.style.display = "none";
+        return;
+    }else{
+        ul.style.display = "block";
+    }
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+    </nav>
+    <section id="movies-list">
+        <!--box-1------------------------>
+        <section id="movies-list">
+            <!--box-1------------------------>
+            <div class="movies-box">
+                <!--img------------>
+                <div class="movies-img">
+                    <div class="quality">UHD</div>
+                    <img src="images/t-1.jpg">
+                </div>
+                <!--text--------->
+                <a href="https://youtu.be/ndl1W4ltcmg">
+                    THE WITCHER
+                </a>
+            </div>
+             <!--box-2------------------------>
+             <div class="movies-box">
+                <!--img------------>
+                <div class="movies-img">
+                    <div class="quality">UHD</div>
+                    <img src="images/t-2.jpg">
+                </div>
+                <!--text--------->
+                <a href="https://youtu.be/1KsyZF590NM">
+                    TOM CLANCY'S JACK RYAN
+                </a>
+            </div>
+             <!--box-3------------------------>
+             <div class="movies-box">
+                <!--img------------>
+                <div class="movies-img">
+                    <div class="quality">UHD</div>
+                    <img src="images/t-3.jpg">
+                </div>
+                <!--text--------->
+                <a href="https://youtu.be/aOC8E8z_ifw">
+                    THE MANDALORIAN
+                </a>
+            </div>
+             <!--box-4------------------------>
+             <div class="movies-box">
+                <!--img------------>
+                <div class="movies-img">
+                    <div class="quality">UHD</div>
+                    <img src="images/t-4.jpg">
+                </div>
+                <!--text--------->
+                <a href="https://youtu.be/sj9J2ecsSpo">
+                    WANDAVISION
+                </a>
+            </div>
+             <!--box-5------------------------>
+             <div class="movies-box">
+                <!--img------------>
+                <div class="movies-img">
+                    <div class="quality">UHD</div>
+                    <img src="images/t-5.jpg">
+                </div>
+                <!--text--------->
+                <a href="https://youtu.be/ESEUoa-mz2c">
+                    DARK
+                </a>
+            </div>
+             <!--box-6------------------------>
+             <div class="movies-box">
+                <!--img------------>
+                <div class="movies-img">
+                    <div class="quality">UHD</div>
+                    <img src="images/t-6.jpg">
+                </div>
+                <!--text--------->
+                <a href="https://youtu.be/rlR4PJn8b8I">
+                   GAME OF THRONES
+                </a>
+            </div>
+             <!--box-7------------------------>
+             <div class="movies-box">
+                <!--img------------>
+                <div class="movies-img">
+                    <div class="quality">UHD</div>
+                    <img src="images/t-7.jpg">
+                </div>
+                <!--text--------->
+                <a href="https://youtu.be/R1ZXOOLMJ8s">
+                    STRANGER THINGS
+                </a>
+            </div>
+             <!--box-8------------------------>
+             <div class="movies-box">
+                <!--img------------>
+                <div class="movies-img">
+                    <div class="quality">UHD</div>
+                    <img src="images/t-8.jpg">
+                </div>
+                <!--text--------->
+                <a href="https://youtu.be/HhesaQXLuRY">
+                    BREAKING BAD
+                </a>
+            </div>
+        </section>       
+</body>
+</html>
